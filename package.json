@@ -1,0 +1,23 @@
+{
+  "name": "userscripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack build --mode=production",
+    "start": "webpack build --watch --mode=development"
+  },
+  "devDependencies": {
+    "@types/wanakana": "^4.0.3",
+    "@types/webpack": "^5.28.0",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4",
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  },
+  "dependencies": {
+    "wanakana": "^4.0.2"
+  }
+}
