@@ -19,8 +19,6 @@ const extractTextFromElement = (element: Element) => {
     if (!isElementNode(parentNode))
       throw new Error("Expected type ELEMENT_NODE.");
 
-    console.log(node);
-
     const isFurigana = parentNode.classList.contains("furigana");
 
     if (isFurigana) lastFurigana = node.textContent;
@@ -36,8 +34,7 @@ const extractTextFromElement = (element: Element) => {
 const main = () => {
   const sentenceElements = document.getElementsByClassName("japanese_sentence");
 
-  // [...sentenceElements].forEach((el) => {
-  [sentenceElements[1]].forEach((el) => {
+  [...sentenceElements].forEach((el) => {
     const text = extractTextFromElement(el);
 
     const copyButton = document.createElement("span");
